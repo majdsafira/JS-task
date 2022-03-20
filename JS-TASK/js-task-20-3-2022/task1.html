@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let score = window.prompt("please enter your grade ")
+        switch (parseInt(score / 10)) {
+            case 9:
+                document.write("GRADE : A");
+                break;
+            case 8:
+                document.write("GRADE : B");
+                break;
+            case 7:
+                document.write("GRADE : C");
+                break;
+            case 6:
+                document.write("GRADE : D");
+                break;
+            case 5:
+                document.write("GRADE : E");
+                break;
+            default:
+                document.write("GRADE : FAIL");
+        }
+    </script>
+</body>
+
+</html>
