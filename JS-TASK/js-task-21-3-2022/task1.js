@@ -122,11 +122,11 @@ var array = [0,5,7,9]
 
 answer:
 array = [0,5,7,9];
-array.shift();
-array.shift();
-array.shift();
-array.unshift(1, 3, 4, 6, 8);
 array.push(10);
+array.unshift(10);
+array.shift();
+array2.pop();
+
 document.write(array);
 */
 /*********************************************************** */
