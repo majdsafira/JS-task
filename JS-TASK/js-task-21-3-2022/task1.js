@@ -122,11 +122,11 @@ var array = [0,5,7,9]
 
 answer:
 array = [0,5,7,9];
-array.push(10);
-array.unshift(10);
 array.shift();
-array2.pop();
-
+array.shift();
+array.shift();
+array.unshift(1, 3, 4, 6, 8);
+array.push(10);
 document.write(array);
 */
 /*********************************************************** */
@@ -143,12 +143,10 @@ Using the console try to figure out what the thing thats (push, unshift, shift, 
 var array2 = [5,9,-7,3.5]
 //answer 
 array = [0,5,7,9];
+array.push(10);
+array.unshift(10);
 array.shift();
-array.shift();
-array.shift();
-array.unshift(5);
-array.push(-7, 3.5);
-
+array.pop();
 document.write(array);
 */
 /*********************************************************** */
