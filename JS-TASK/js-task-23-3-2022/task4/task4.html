@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="png/image" href="https://www.stickpng.com/assets/images/5847eb76cef1014c0b5e484f.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+
+</head>
+
+<body>
+    <select id="font_type" onchange="fontType()">
+        <option disabled selected value> -- select an option -- </option>
+        <option value="arial">Arial</option>
+        <option value="fantsy">Fantsy</option>
+        <option value="impact">Impcat</option>
+        <option value="monospace">Mono Space</option>
+    </select>
+
+    <select id="font_size" onchange="fontSize()">
+        <option disabled selected value> -- select an option -- </option>
+        <option value="8">8px</option>
+        <option value="12">12px</option>
+        <option value="16">16px</option>
+        <option value="20">20px</option>
+        <option value="24">24px</option>
+    </select>
+
+
+    
+    <input type="checkbox" onclick="fontstyle1()" id="italic">
+    <label for="italic"> italic</label>
+
+    
+    <input type="checkbox" onclick="fontstyle2()" id="bold">
+    <label for="bold"> bold</label>
+
+    <input type="checkbox" onclick="fontstyle3()" id="underline">
+    <label for="underline"> underline</label>
+
+
+    <br /><br />
+    <p style="border: solid 1px black; padding: 10px;" id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Laudantium nemo sunt animi reiciendis rerum praesentium eligendi voluptatibus. Doloremque modi, cupiditate
+        assumenda ullam accusantium in tempore rem sapiente reiciendis qui molestias!</p>
+
+    <script src="task4.js">
+
+    </script>
+</body>
+
+</html>

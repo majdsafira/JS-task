@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select onchange="myflag()" id="demo">
+        <option disabled selected value> -- select an option -- </option>
+        <option value="jo" >JORDAN </option>
+        <option value="ps">PALISTINE </option>
+        <option value="usa">USA </option>
+        <option value="sp">SPAIN </option>
+    </select>
+
+    <div>
+        <img id="image" src="">
+    </div>
+    <script>
+        function myflag() {
+            let x = document.getElementById("demo").value;
+            if (x == "jo") {
+                document.querySelector("#image").src = "img/JO.png";
+            } 
+            else if (x == "ps") {
+                document.querySelector("#image").src = "img/ps.jpg";
+            }
+            else if (x == "usa") {
+                document.querySelector("#image").src = "img/usa.png";   
+            }
+            else if (x == "sp") {
+                document.querySelector("#image").src = "img/spain.png";   
+            }
+        }
+    </script>
+</body>
+</html>
