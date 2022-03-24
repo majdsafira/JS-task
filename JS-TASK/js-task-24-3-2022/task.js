@@ -135,17 +135,17 @@ Ex: longestName(persons) => "Soso Al-Amora"
 
 
 function longestName() {
-    let x= lon[0].name.first + lon[0].name.last;
+    let x= long[0].name.first + long[0].name.last;
     let y = persons.length;
     for (i = 1; i < y; i++) {
-        if (x.length < lon[i].name.first.length + lon[i].name.last.length) {
-            x = lon[i].name.first + lon[i].name.last;
+        if (x.length < long[i].name.first.length + long[i].name.last.length) {
+            x = long[i].name.first + long[i].name.last;
         }
     }
     return x;
 }
 
-const lon = Object.create(persons)
+const long = Object.create(persons)
 console.log(longestName());
 
 
