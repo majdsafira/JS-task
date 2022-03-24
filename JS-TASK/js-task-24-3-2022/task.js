@@ -131,7 +131,7 @@ that accept an object
 and return the full name of the person have longest full name
 
 Ex: longestName(persons) => "Soso Al-Amora"
-*/
+
 
 
 function longestName() {
@@ -147,6 +147,9 @@ function longestName() {
 
 const long = Object.create(persons)
 console.log(longestName());
+*/
+
+
 
 
 //////////////////////////////////////////////////////////////////
@@ -173,6 +176,26 @@ Ex: repeatWord("My name is alex mercer class name B baba mama hello Hello HELLO"
   hello:3
 }
 */
+function repeatWord(word) {
+    let rep = 0;
+    let s = word.toUpperCase().split(" ");
+   
+    for (i = 0; i < s.length; i++) {
+        for (j = 0; j < s.length; j++) {
+            if (s[i] == s[j]) {
+                rep++;
+
+            }
+
+        }
+        console.log(s[i] + ":" + rep);
+        rep =0;
+    }
+    
+
+}
+
+repeatWord("My name is alex mercer class name B baba mama hello Hello HELLO");
 
 
 
@@ -188,6 +211,24 @@ Ex: repeatChar("mamababatetacedo")
 => { m:2,  a:5, b:2, t2:, e:2, c:1, d:1, o:1}
 */
 
+function repeatChar(ch) {
+    let reep = 0;
+    let c = ch;
+     
+    for (i = 0; i < c.length; i++) {
+        for (j = 0; j < c.length; j++) {
+            if (c[i] == c[j]) {
+                reep++;
+
+            }
+
+        }
+        console.log(c[i] + ":" + reep);
+        reep =0;
+    }
+}
+
+repeatChar("mamababatetacedo");
 
 /*
 9
@@ -198,6 +239,20 @@ and return an object have the key that inside the array
 Ex: selectFromObject({a: 1, cat: 3}, ['a', 'cat', 'd'])
 =>  {a: 1, cat: 3}
 */
+
+function selectFromObject(object , array){
+    result = {};
+    for(i = 0; i < array.length; i++){
+        for (const [key , val] of Object.entries(object)) {
+        if(key == array[i]){
+            result[`${array[i]}`] = val;
+        
+    }}}
+
+    return result;
+  
+}
+console.log(selectFromObject({a: 1, cat: 3}, ['a', 'cat', 'd']));
 
 
 
