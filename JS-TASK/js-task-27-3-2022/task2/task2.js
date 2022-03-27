@@ -1,8 +1,8 @@
 function ss() {
-    localStorage.setItem('sub', document.getElementById('sub').value);
-    localStorage.setItem('des', document.getElementById('des').value);
-    localStorage.setItem('ut', document.getElementById('ut').value);
-    localStorage.setItem('tu', document.getElementById('tu').value);
+    sessionStorage.setItem('sub', document.getElementById('sub').value);
+    sessionStorage.setItem('des', document.getElementById('des').value);
+    sessionStorage.setItem('ut', document.getElementById('ut').value);
+    sessionStorage.setItem('tu', document.getElementById('tu').value);
     };
     
     
