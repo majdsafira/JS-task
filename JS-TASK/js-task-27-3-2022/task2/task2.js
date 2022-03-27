@@ -8,7 +8,7 @@ function ss() {
     
     
     document.getElementById('card').innerHTML = `
-      your subject is: ${localStorage.getItem('sub')} <br/>
-      your project brief is: ${localStorage.getItem('des')} <br/>
-      user type is: ${localStorage.getItem('ut')} <br/>
-      Technology used: ${localStorage.getItem('tu')} <br/>`
+      your subject is: ${sessionStorage.getItem('sub')} <br/>
+      your project brief is: ${sessionStorage.getItem('des')} <br/>
+      user type is: ${sessionStorage.getItem('ut')} <br/>
+      Technology used: ${sessionStorage.getItem('tu')} <br/>`
