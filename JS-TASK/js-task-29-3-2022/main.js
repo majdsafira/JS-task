@@ -8,9 +8,10 @@ async function getData() {
     select.innerHTML += `<option value = "${i}"> ${data[i].name} </option>`
   }
     select.onchange = function nickName(){
-          myDiv.classList.add("nickName")
           myDiv.innerHTML = `Nickname: ${data[this.value].nickname}`
           select.after(myDiv) 
       }
 }
 getData()
+
+
