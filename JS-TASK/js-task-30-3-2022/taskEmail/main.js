@@ -1,21 +1,15 @@
-var validRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
+var validRegex = /@/g
 
 var x = document.getElementById('em').value;
-
+var check = x.match(validRegex);
 
 function ValidateEmail() {
-  if (x.match(validRegex)) {
+  if (check) {
 
     alert("Valid email address!");
-
-    return true;
 
   } else {
 
     alert("Invalid email address!");
-
-    return false;
-
   }
 }
